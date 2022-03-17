@@ -9,7 +9,8 @@ require('dotenv').config()
   imports: [
     TelegrafModule.forRoot({
       token: process.env.TELEGRAM_BOT_TOKEN
-  })],
+    })
+  ],
   controllers: [AppController],
   providers: [AppService, AppUpdate],
 })
